@@ -38,7 +38,6 @@ function useEventListener<
   element?: RefObject<T>,
   options?: boolean | AddEventListenerOptions
 ) {
-  // Create a ref that stores handler
   const savedHandler = useRef(handler);
 
   useIsomorphicLayoutEffect(() => {
