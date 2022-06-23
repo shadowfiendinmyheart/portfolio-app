@@ -1,0 +1,32 @@
+.wrapper {
+    width: 370px;
+    height: 416px;
+    background-color: aliceblue;
+    border-radius: 7px;
+    padding: 269px 0 0 48px;
+}
+
+.badge {
+    padding: 14px 23px 8px 16px;
+    background-color: #FFFFFF;
+    border-radius: 19px;
+    color: #391400;
+    font-size: 16px;
+    letter-spacing: -0.8px;
+    cursor: pointer;
+}
+
+.title {
+    margin-top: 35px;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -2.5px;
+}
+
+@media (max-width: 1040px) {
+    .wrapper {
+        width: 329px;
+        padding: 269px 0 0 28px;
+    }
+}

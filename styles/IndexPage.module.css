@@ -1,0 +1,21 @@
+.switcher {
+    margin: 85px auto 0 auto;
+    width: fit-content;
+}
+
+.grid {
+    margin: 75px auto 0 auto;
+    width: fit-content;
+    margin-bottom: 184px;
+}
+
+@media (max-width: 1040px) {
+    .switcher {
+        margin: 32px auto 0 auto;
+    }
+
+    .grid {
+        margin: 48px auto 0 auto;
+        margin-bottom: 224px;
+    }
+}

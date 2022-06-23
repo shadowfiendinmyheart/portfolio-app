@@ -1,0 +1,24 @@
+.list {
+    display: flex;
+    width: 522px;
+    height: 26px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.item {
+    font-size: 16px;
+    height: 13px;
+    color: #ffffff;
+    letter-spacing: -0.8px;
+}
+
+.item:hover {
+    color: #e1f2fc;
+}
+
+@media (max-width: 1040px) {
+    .wrapper {
+        display: none;
+    }
+}

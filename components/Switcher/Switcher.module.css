@@ -1,0 +1,11 @@
+.list {
+    width: 563px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    cursor: pointer;
+    font-size: 16px;
+    color: #391400a3;
+}

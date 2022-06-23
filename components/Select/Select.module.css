@@ -1,0 +1,19 @@
+.select {
+    position: relative;
+    appearance: none;
+    outline: 0;
+    font-size: 16px;
+    width: 329px;
+    padding: 14px;
+    color: #000000;
+    background: url('../../public/Triangle.svg')
+      no-repeat right 0.8em center / 1.4em;
+    background-color: #FFFFFF;
+    border: solid 1px #F3D1BF;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.select:focus {
+    outline: none;
+}

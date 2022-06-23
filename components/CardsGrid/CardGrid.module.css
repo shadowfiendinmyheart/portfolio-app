@@ -1,0 +1,28 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-column-gap: 30px;
+    row-gap: 32px;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(2, 370px);
+    }
+}
+
+@media (max-width: 1040px) {
+    .grid {
+        grid-template-columns: repeat(1, 329px);
+    }
+
+    .buttonWrapper {
+        margin-top: 48px;
+    }
+}
