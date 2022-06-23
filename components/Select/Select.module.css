@@ -7,7 +7,8 @@
     padding: 14px;
     color: #000000;
     background: url('../../public/Triangle.svg')
-      no-repeat right 0.8em center / 1.4em;
+      no-repeat right 15px center;
+    background-size: 10px;
     background-color: #FFFFFF;
     border: solid 1px #F3D1BF;
     border-radius: 6px;

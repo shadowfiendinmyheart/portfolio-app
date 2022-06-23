@@ -5,13 +5,18 @@ import { SWITCHER_MODE } from "../../interfaces/switcher";
 import { MOBILE_MODE } from "../../constants";
 
 import styles from "./Switcher.module.css";
+import { cardSlice } from "../../store/reducers/CardsStore";
+import { useAppDispatch, useAppSelector } from "../../hooks/useRedux";
 
 const Switcher = () => {
+  const { currentMode } = useAppSelector((state) => state.cardSlice);
+  const { changeMode } = cardSlice.actions;
+  const dispatch = useAppDispatch();
   const { width } = useWidth();
   const tabs = Object.values(SWITCHER_MODE);
 
-  const changeTabHandler = (mode: string) => {
-    console.log("mode", mode);
+  const changeTabHandler = (mode: SWITCHER_MODE) => {
+    dispatch(changeMode(mode));
   };
 
   return width > MOBILE_MODE ? (
@@ -20,7 +25,7 @@ const Switcher = () => {
         return (
           <li
             onClick={() => changeTabHandler(tab)}
-            style={true && { color: "#16CD53" }}
+            style={currentMode === tab ? { color: "#16CD53" } : {}}
             className={styles.item}
             key={tab}
           >

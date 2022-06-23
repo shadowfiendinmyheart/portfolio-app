@@ -1,9 +1,19 @@
 .wrapper {
+    position: relative;
     width: 370px;
     height: 416px;
-    background-color: aliceblue;
     border-radius: 7px;
     padding: 269px 0 0 48px;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 370px;
+    height: 416px;
 }
 
 .badge {
