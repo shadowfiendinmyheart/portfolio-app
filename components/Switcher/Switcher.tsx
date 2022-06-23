@@ -1,12 +1,13 @@
 import React from "react";
-import { useWidth } from "../../hooks/useWidth";
+import classnames from "classnames";
 import Select from "../Select";
+import { useWidth } from "../../hooks/useWidth";
+import { cardSlice } from "../../store/reducers/CardsStore";
+import { useAppDispatch, useAppSelector } from "../../hooks/useRedux";
 import { SWITCHER_MODE } from "../../interfaces/switcher";
 import { MOBILE_MODE } from "../../constants";
 
 import styles from "./Switcher.module.css";
-import { cardSlice } from "../../store/reducers/CardsStore";
-import { useAppDispatch, useAppSelector } from "../../hooks/useRedux";
 
 const Switcher = () => {
   const { currentMode } = useAppSelector((state) => state.cardSlice);
@@ -25,8 +26,10 @@ const Switcher = () => {
         return (
           <li
             onClick={() => changeTabHandler(tab)}
-            style={currentMode === tab ? { color: "#16CD53" } : {}}
-            className={styles.item}
+            className={classnames(
+              styles.item,
+              currentMode === tab && styles.active
+            )}
             key={tab}
           >
             {tab}

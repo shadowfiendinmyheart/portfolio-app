@@ -7,6 +7,10 @@
     overflow: hidden;
 }
 
+.active {
+    outline: 7px solid #4FE24A;
+}
+
 .background {
     position: absolute;
     top: 0;

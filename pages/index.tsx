@@ -1,11 +1,11 @@
 import CardsGrid from "../components/CardsGrid";
 import Header from "../components/Header";
 import Switcher from "../components/Switcher";
-import { MOBILE_MODE } from "../constants";
 import useEventListener from "../hooks/useEventListener";
 import { useAppDispatch } from "../hooks/useRedux";
 import { useWidth } from "../hooks/useWidth";
 import { cardSlice } from "../store/reducers/CardsStore";
+import { MOBILE_MODE } from "../constants";
 
 import styles from "../styles/IndexPage.module.css";
 

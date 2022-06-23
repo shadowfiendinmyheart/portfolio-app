@@ -1,4 +1,5 @@
 import React from "react";
+import classnames from "classnames";
 import Image from "next/image";
 import { SWITCHER_MODE } from "../../interfaces/switcher";
 
@@ -35,8 +36,7 @@ const Card: React.FC<CardProps> = ({
 
   return (
     <div
-      style={isActive ? { outline: "7px solid #4FE24A" } : {}}
-      className={styles.wrapper}
+      className={classnames(styles.wrapper, isActive && styles.active)}
       onClick={handleCardClick}
     >
       <div className={styles.background}>

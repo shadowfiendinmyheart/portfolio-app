@@ -1,6 +1,6 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 370px);
+    grid-template-columns: repeat(4, 370px);
     grid-column-gap: 30px;
     row-gap: 32px;
 }
@@ -9,6 +9,12 @@
     display: flex;
     justify-content: center;
     margin-top: 80px;
+}
+
+@media (max-width: 1620px) {
+    .grid {
+        grid-template-columns: repeat(3, 370px);
+    }
 }
 
 @media (max-width: 1200px) {

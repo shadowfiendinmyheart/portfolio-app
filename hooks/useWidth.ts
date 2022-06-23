@@ -1,4 +1,4 @@
-import { useState, useEffect, useLayoutEffect } from "react";
+import { useState } from "react";
 import useIsomorphicLayoutEffect from "./useIsomorphicLayoutEffect";
 
 export const useWidth = () => {
